@@ -1,0 +1,16 @@
+.btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: $text-color;
+    border-radius: 16px;
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-medium;
+    font-size: 14px;
+    border: 1px solid #E7E7EC;
+}
+
+.btn-filled {
+    border: none !important;
+    color: $white;
+    background: #E92B43;
+}

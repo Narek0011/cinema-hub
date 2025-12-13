@@ -1,0 +1,84 @@
+.movie-card {
+    width: 100%;
+
+    .img-fluid {
+        width: 100%;
+    }
+
+    .movie-title {
+        margin-top: 10px;
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-regular;
+        font-size: 24px;
+        color: $black;
+    }
+
+    .movie-genres {
+        margin-top: 9px;
+        display: flex;
+        gap: 7px;
+
+        .genre-tag {
+            font-family: $font-family-sans-serif;
+            font-weight: $font-weight-regular;
+            font-size: 12px;
+            border-radius: 3px;
+            background: #F2F2F5;
+            color: #727276;
+            padding: 3px 4px;
+        }
+    }
+
+    .movie-showings {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        gap: 10px;
+
+        .showing-info {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 3px;
+
+            .showing-block {
+                text-decoration: none;
+
+                .showing-time {
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                    text-align: center;
+                    background: #E92B43;
+                    padding: 7px 14px;
+                    font-family: $font-family-sans-serif;
+                    font-weight: $font-weight-medium;
+                    font-size: 15px;
+                    line-height: 100%;
+                    color: $white;
+                }
+
+                .showing-details {
+                    padding: 3px 0;
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    text-align: center;
+                    border: 1px solid #E92B43;
+                    color: $text-primary;
+                    font-family: $font-family-sans-serif;
+                    font-weight: $font-weight-regular;
+                    font-size: 11px;
+                    line-height: 100%;
+                }
+            }
+
+            .hall-name {
+                font-family: $font-family-sans-serif;
+                font-weight: $font-weight-regular;
+                font-size: 10px;
+                color: $text-primary;
+            }
+        }
+    }
+
+}

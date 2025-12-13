@@ -1,0 +1,29 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+//global
+@import 'mixins';
+@import 'variables';
+
+//components
+@import "components/movie-card";
+@import "components/nav-filters";
+@import "components/button";
+
+//partials
+@import "partials/header";
+@import "partials/footer";
+
+//pages
+@import "pages/home";
+
+//styles
+.app-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('/public/img/background-poster.png');
+}

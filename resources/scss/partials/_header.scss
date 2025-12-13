@@ -1,0 +1,87 @@
+.header-container {
+    max-width: $max-width;
+    background: #123D4B;
+    width: 100%;
+    box-sizing: border-box;
+
+    .top-image {
+        max-width: $max-width;
+        width: 100%;
+    }
+
+    .header-content {
+        padding: 23px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 500px) {
+            padding: 23px;
+        }
+
+        @media (max-width: 1050px) {
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .first_content {
+            display: flex;
+            align-items: center;
+            gap: 70px;
+            min-width: 300px;
+            flex-wrap: wrap;
+
+            @media (max-width: 500px) {
+                gap: 20px;
+            }
+
+            .location-info {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                position: relative;
+                max-width: 150px;
+
+                .arrow-bottom {
+                    position: absolute;
+                    top: 3px;
+                    right: -18px;
+                    cursor: pointer;
+                }
+
+                .address {
+                    font-family: $font-family-sans-serif;
+                    font-weight: $font-weight-regular;
+                    font-size: $font-size-base;
+                    line-height: 100%;
+                    color: $white;
+                }
+
+                .street {
+                    font-family: $font-family-sans-serif;
+                    font-weight: $font-weight-regular;
+                    font-size: 13px;
+                    line-height: 100%;
+                    color: $gray-400;
+                }
+            }
+        }
+
+        .last-content {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+
+            .socials {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
