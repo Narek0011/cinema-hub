@@ -43,3 +43,9 @@ Start both the Laravel backend server and the Vite asset bundler:
     # This watches for changes in your SCSS and automatically recompiles.
     ```
 3.  The application should now be accessible at `http://127.0.0.1:8000/`
+
+
+Run database seeders to add test data (required):
+```bash
+php artisan db:seed
+```
